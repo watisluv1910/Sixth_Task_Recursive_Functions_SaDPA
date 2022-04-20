@@ -81,7 +81,7 @@ bool FillList(List<T>* &list)
 	{
 		for (size_t i = 0; i < list_size; i++)
 		{
-			list->PushFront(rand() % 100);
+			list->PushBack(rand() % 100);
 		}
 		break;
 	}
@@ -94,7 +94,7 @@ bool FillList(List<T>* &list)
 			int temp_variable = 0;
 			cin >> temp_variable;
 
-			list->PushFront(temp_variable);
+			list->PushBack(temp_variable);
 		}
 		break;
 	}
